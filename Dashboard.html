@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/Dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <i class="fa-solid fa-bars fa" id="sidebar-btn"></i>
+            <div class="sidebar-top sidebar-nav">
+                <ul>
+                    <li>All tasks</li>
+                    <li>Today</li>
+                    <li>Completed</li>
+                </ul>
+            </div>
+            <div class="sidebar-bottom sidebar-nav">
+                <ul>
+                    <li>Dark mode</li>
+                    <li>Log out</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Workspace -->
+        <div class="workspace">
+            <div class="empty-workspace">
+                <i class="fa-solid fa-folder-open" style="color: rgb(72, 72, 239);" id="folder-img"></i>
+                <p>Ready to gain momentum? <br> Add a task.</p>
+                <button class="create-task-btn">
+                    Create a task
+                </button>
+            </div>
+            <!-- Form to inter task title, description and date -->
+            <div class="task-box">
+                <form class="form">
+                    <div class="task-inputs">
+                        <input type="text" placeholder="Buy groceries" class="form-inputs" id="task-title"> 
+                        <input type="text" placeholder="Description" class="form-inputs" id="task-description">
+                        <input type="date" class="form-inputs" id="task-date"> <hr>
+                    </div>
+                    <br>
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="add-new-task-btn">Add task</button>
+                </form>
+            </div>
+            <div class="task-container">
+                <ul class="task-display">
+                    <!-- Tasks go here -->
+                </ul>
+            </div>
+
+            <button class="bottom-plus-btn"><i class="fa-regular fa-plus"></i>Add task</button>
+        </div>
+
+    </div>
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>

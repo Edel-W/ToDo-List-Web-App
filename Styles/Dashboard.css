@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px auto;
+    height: 100vh;
+    overflow: hidden;
+    transition: grid-template-columns 0.3s ease;
+}
+
+.sidebar {
+    background-color: rgb(234, 234, 234);
+    transition: width 0.3s ease;
+}
+
+.sidebar .sidebar-nav {
+    transition: opacity 0.3s ease;
+}
+
+.container.sidebar-collapsed {
+    grid-template-columns: 0 auto;
+}
+
+#sidebar-btn {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    transition: 0.1s ease;
+}
+
+#sidebar-btn:hover {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(224, 221, 221);
+    cursor: pointer;
+}
+
+.sidebar-top {
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.sidebar-bottom {
+    margin-top: 30rem;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-workspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.empty-workspace p {
+    font-size: 1.5rem;
+}
+
+#folder-img {
+    font-size: 4rem;
+}
+
+.create-task-btn {
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    width: 9rem;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(49, 49, 250);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-btn:hover {
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.17);
+   background-color: rgb(44, 44, 231);
+   cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li{
+    width: 11rem;
+    padding: 4px;
+}
+
+li:hover{
+    background-color: rgb(224, 221, 221);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.task-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+form{
+    text-align: center;
+    width: 30rem;
+    border: 2px solid rgb(237, 235, 235);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-inputs {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background-color: lightgray;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    width: 6rem;
+    padding: 8px;
+    margin-right: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-btn:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.17);
+    background-color: rgb(205, 202, 202);
+    cursor: pointer;
+}
+
+
+.add-new-task-btn {
+    background-color: rgb(49, 49, 250);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    width: 6rem;
+    padding: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-new-task-btn:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.17);
+    background-color: rgb(44, 44, 231);
+    cursor: pointer;
+}
+
+.bottom-plus-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(49, 49, 250);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    width: 6.5rem;
+    padding: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-plus-btn:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.17);
+    background-color: rgb(44, 44, 231);
+    cursor: pointer;    
+}
+
+.task-list {
+    display: flex;
+    flex-direction: row;
+
+}
