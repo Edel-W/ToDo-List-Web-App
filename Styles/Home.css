@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(228, 227, 227);
+    padding: 15px 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    gap: 35px;
+    font-size: 1.2em;
+    color: rgb(92, 91, 91)
+}
+
+.header-btn{
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(58, 58, 249);
+    color: white;
+    font-size: 17px;
+    padding: 0.75rem 1.75rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    transform: scale(1.1);
+    background-color:rgb(51, 51, 222);
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    gap: 3rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+#headline-mntm {
+    color: rgb(58, 58, 249);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+.hero-btn {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(58, 58, 249);
+    color: white;
+    font-size: 17px;
+    padding: 1rem 2.5rem; 
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.hero-btn:hover {
+    transform: scale(1.1);
+    background-color:rgb(51, 51, 222);
+}
+
+img {
+    margin-left: 0px;
+    width: 18rem;
+
+}
+
+img:hover {
+    transform: translateX(100px);
+    transition: 2s;
+}
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 8rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.subheadline {
+    color:  rgb(58, 58, 249);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border: none;
+    border-radius: 15px;
+    width: 20rem;
+    height: 20rem;
+    padding: 20px 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+
+#priority {
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #eae3f9;
+    padding: 8px;
+}
+
+#goals {
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #d2f5d2;
+    padding: 8px;
+}
+
+#folder {
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcf4d6;
+    padding: 8px;    
+}
+
+#progress {
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f8ece2;
+    padding: 8px;     
+}
+
+.features:hover {
+    transform: scale(1.1);
+}
+
+.features h3 {
+    color:  rgb(58, 58, 249);
+}
+
+.howItWorks-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 8rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 2rem;
+}
+
+.steps {
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(58, 58, 249);
+    color: white;
+    padding: 3px 15px;
+}
+
+.closing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.closing-btn {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(58, 58, 249);
+    color: white;
+    font-size: 17px;
+    padding: 1rem 2.5rem; 
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.closing-btn:hover {
+    transform: scale(1.1);
+    background-color:rgb(51, 51, 222);
+}
