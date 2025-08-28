@@ -12,7 +12,7 @@ Interactive task form with title, description, and date.
 
 Collapsible sidebar for navigation.
 
-Dark mode toggle (if implemented).
+Dark mode toggle.
 
 Responsive design for desktop and mobile.
 
