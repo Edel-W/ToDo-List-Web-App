@@ -12,13 +12,17 @@ const descriptionInput = document.querySelector("#task-description");
 const form = document.querySelector(".form");
 const addNewTask = document.querySelector(".add-new-task-btn");
 const taskContainer = document.querySelector(".task-container");
+const bottomBtn = document.querySelector(".bottom-plus-btn")
+
+
+const taskArray = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     taskBox.classList.add("hidden");
 })
 
 sidebarBtn.addEventListener("click", event => {
-    container.classList.toggle("sidebar-collapsed");
+    sidebar.classList.toggle("collapsed");
 })
 
 createTask.addEventListener("click", event => {
@@ -27,12 +31,24 @@ createTask.addEventListener("click", event => {
 })
 
 form.addEventListener("submit", event => {
+    event.preventDefault();
     addTask(event);
     console.log("Task Added!");
 })
 
 function addTask(event) {
-    event.preventDefault();
+    console.log("addTask fired!");
+
+    const newTask = titleInput.value.trim();
+
+    if(newTask === "") {
+        console.log("Please enter a task");
+        return;
+    }
+
+     //console.clear();
+
+    taskArray.push(newTask);
 
     const taskList = document.createElement('li');
     taskList.className = "task-list";
@@ -40,19 +56,26 @@ function addTask(event) {
     taskList.innerHTML = `
         <div class="task-row">
             <div class="task-item"> 
-            <input type="checkbox" >
-            <span class="taskTitle"></span>
+            <input type="checkbox" id="checkbox">
+            <p class="taskTitle"></p>
             </div>
-            <button><i class="fa-solid fa-ellipsis"></i></button> 
+            <button id="options-btn"><i class="fa-solid fa-ellipsis"></i></button> 
         </div>
     `;
 
     
-    taskList.querySelector(".taskTitle").textContent = titleInput.value;
+    taskList.querySelector(".taskTitle").textContent = newTask;
 
     taskContainer.appendChild(taskList);
 
-    titleInput.value = "";
-
+    form.reset();
+    
     taskBox.classList.add("hidden");
-}
+
+    console.log(taskArray);
+
+};
+
+bottomBtn.addEventListener("click", event => {
+    taskBox.classList.remove("hidden");
+})
