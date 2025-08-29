@@ -10,8 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
     gap: 3rem;
-    margin-top: 5rem;
 }
 
 h1 {
@@ -24,10 +24,10 @@ form {
     flex-direction: column;
     gap: 1rem; 
     width: 25rem;
-    height: 33rem;
+    height: 28rem;
     border: 1px solid rgb(167, 167, 252);;
     border-radius: 10px;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -36,12 +36,11 @@ form {
     font-weight: 450;
 }
 
-#signUp-email, #signUp-pwd , #signUp-confirm-pwd{
+#signIn-email, #signIn-pwd {
     padding: 0.5rem;
     width: 20rem;
     border: 1px solid rgb(164, 161, 161);
     border-radius: 10px;
-    margin-bottom: 0.5rem;
 }
 
 .pwd-info{
@@ -68,7 +67,7 @@ form {
     background-color:rgb(51, 51, 222);
 }
 
-#signIn-reminder {
+#signUp-reminder {
     text-align: center;
     font-size: 1.1em;
 }
